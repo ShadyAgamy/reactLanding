@@ -1,0 +1,133 @@
+@import "../../variables.scss";
+
+.header {
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2), rgba(0, 0, 0, .1)),
+        url("../../images/header.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    @media screen and (max-width: 1200px) {
+        padding-bottom: 4rem;
+    }
+
+    .header_inner {
+        margin-top: 20vh;
+
+        @media screen and (max-width: 1200px) {
+            margin-top: 4rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            margin-top: 5rem;
+        }
+    }
+
+    .arrow-shape {
+        width: 9rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        @media screen and (max-width: 1200px) {
+            width: 3rem;
+        }
+
+        img {
+            width: 4rem;
+
+            @media screen and (max-width: 1200px) {
+                width: 3rem;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 2rem;
+            }
+
+            &:first-of-type {
+                margin-right: -2.7rem;
+
+                @media screen and (max-width: 500px) {
+                    margin-right: -19px;
+                }
+            }
+        }
+    }
+
+    .h1 {
+        font-size: 79px;
+        font-weight: 700;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 3.5rem;
+        }
+
+        .text-green {
+            text-shadow: 4px 5px 0px rgba(205, 222, 0, 0.77);
+            color: #CDDE00;
+            ;
+        }
+    }
+
+    p {
+        font-size: 19px;
+        font-weight: 400;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 17px;
+        }
+    }
+
+    small {
+        max-width: 36rem;
+        position: absolute;
+        bottom: 1rem;
+        font-size: 16px;
+
+        @media screen and (max-width: 1400px) {
+            position: static;
+            display: block;
+            margin-top: 2rem;
+            font-size: 14px;
+        }
+    }
+}
+
+.logo_container {
+    background-color: #522D6E;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    height: 22rem;
+    clip-path: polygon(100% 0, 0 0, 100% 43%);
+
+    img {
+        width: 11rem;
+        position: absolute;
+        right: 26px;
+        top: 5%;
+    }
+}
+
+.toolTipBtn {
+    background-color: transparent;
+    border: none;
+    margin-left: 2rem;
+
+    i {
+        color: $primaryColor;
+    }
+}
+
+
+
+[role=tooltip] {
+    div {
+        background-color: #F2F2F2;
+        color: #4D4D4D;
+    }
+}

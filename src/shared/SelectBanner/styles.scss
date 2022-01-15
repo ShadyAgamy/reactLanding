@@ -1,0 +1,215 @@
+@import "../../variables.scss";
+
+.SelectBanner {
+    padding-top: 3rem;
+
+    @media screen and (max-width: 600px) {
+        padding-top: 1rem;
+    }
+
+    &-overlay {
+        background-image: linear-gradient(to top, #F2F2F2, #F2F2F2);
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    &-background {
+        width: 100%;
+        background-image: url("../../images/backWithShapes.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &-inner {
+        h4 {
+            color: $primaryColor;
+            font-weight: bold;
+            font-size: 45px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 25px;
+            }
+        }
+
+        h2 {
+            font-size: 55px;
+            color: $primaryGreen;
+            font-weight: bold;
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: 27px;
+            }
+        }
+    }
+
+    .card {
+        background-color: unset;
+        background-clip: unset;
+        border: unset;
+        border-radius: unset;
+        min-height: 22rem;
+
+        @media screen and (max-width: 600px) {
+            margin-bottom: 2rem;
+            min-height: unset;
+        }
+
+    }
+}
+
+
+.mainBtn {
+    font-size: 34px;
+    font-weight: 700;
+    padding: 12px 7rem;
+    border: 3px solid $primaryColor;
+    color: $primaryColor;
+    line-height: 1.15;
+    margin-top: 0.5rem;
+    transition: all .1s cubic-bezier(0.86, 0, 0.07, 1);
+
+    &-cont {
+        cursor: pointer;
+    }
+
+    &-cont:hover .mainBtn {
+
+        background-color: $primaryColor;
+        color: white;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+        padding: 12px 3rem;
+    }
+
+
+}
+
+
+.steps {
+
+    &_text {
+        background-color: $primaryGreen;
+        padding: 1.2rem 3rem;
+        font-size: 45px;
+        font-weight: 600;
+        color: white;
+        position: relative;
+
+        @media screen and (max-width: 700px) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 18px;
+            padding: 1rem 1.2rem;
+        }
+
+        &::before {
+            border-top: 8px dashed $primaryGreen;
+            content: "";
+            width: 100%;
+            top: -17px;
+            left: 0;
+            position: absolute;
+        }
+
+        span {
+            color: $primaryColor;
+            ;
+            font-weight: 800;
+            padding-right: 2rem;
+
+        }
+    }
+
+    .text_OnShape {
+        background-image: url("../../images/greenshape1.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 4rem;
+
+        h5 {
+            margin-top: -36px;
+        }
+
+        @media screen and (max-width: 767px) {
+            background-image: unset;
+        }
+
+    }
+
+    .onbudget {
+
+        .left,
+        .right {
+            .mainh5 h5 {
+                padding: 0;
+            }
+        }
+    }
+
+
+}
+
+.mainh5 {
+    margin-top: -36px;
+
+    h5 {
+        font-weight: bold;
+        font-size: 34px;
+        color: #CDDE00;
+        background-color: white;
+        padding: 1rem 4rem;
+
+        text-align: center;
+    }
+}
+
+.chairManImgs {
+    width: 19rem;
+    margin: -1rem auto 1rem;
+    height: 16rem;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        margin: 0rem auto 3rem;
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+
+        @media screen and (max-width: 500px) {
+            margin: 1rem 0 0;
+        }
+
+    }
+
+}
+
+
+
+.subimtBtn {
+    text-align: center;
+    
+    button {
+        margin-top: 7rem;
+        font-size: 25px;
+        padding: 12px 4rem;
+        border-radius: 10px;
+        background-color: $primaryColor;
+        color: white;
+        @media screen and (max-width: 500px) {
+            margin-top: 3rem;
+        }
+
+        &:hover {
+            color: $primaryColor;
+            background-color: transparent;
+        }
+    }
+}
